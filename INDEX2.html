@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="shortcut icon" href="/img/s.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/MENJ.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></head>
+
+<body>
+
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/fondo ambiental.png" alt="">
+        <nav class="menu-navegacion"> 
+            <a href="#inicio"><font color="blue"><strong>  Inicio </strong></font></a>
+            <a href="#servicio"><font color="blue"><strong>  Servicio </strong></font></a>
+            <a href="#galeria"><font color="blue"> <strong>  Productos </strong></font></a>
+            <a href="#expertos"><font color="blue"><strong>  Especializados </strong></font></a>
+            <a href="/HTML/cont2.html"><font color="blue"><strong>  Contacto </strong></font></a>
+        </nav>
+            <nav id="menu">
+                <!-- Seccion de icono de hamburguesa para abrir sidebar menu -->
+                <button id="openmenu" onclick="openMenu()"><i class="fas fa-bars"></i></button><!-- cambio-->
+                <ul class="mainmenu" id="mainMenu"><!-- cambio-->
+                <!-- seccion de icono cerrar para sidebar menu -->
+                <a href="javascript:void(0)" id="closemenu" onclick="closeNav()">&times;</a><!-- cambio-->             
+           
+            <i class="fas fa-home"></i><li><a href="#">NOSOTROS</a></li>
+            <i class="fas fa-cart-arrow-down"></i><li><a href="/HTML/EJERCICIO 2 FACTURA SERVIVIOS AMBIENTALES.html">TIENDA ON LINE</a></li>
+            <i class="fas fa-charging-station"></i><li><a href="/HTML/EJERCICIO 1 FORMULARIO LIQUIDADOR DE NOMINA.html">PAGOS</a></li>
+            <i class="fab fa-wpforms"></i><li><a href="/HTML/FORM LOGIN.html">INGRESE</a></li>
+            </ul>
+        <!-- SECCION BUSCADOR -->
+<div class="buscarbox">
+    <i class="fas fa-search"></i><input type="text" placeholder="Buscar aquí...">
+    </div>
+    <!-- seccion registro usuario -->
+    <div id="reguser">
+       <i class="fas fa-user"></i><a href="/HTML/EJERCICIO4 FOR_REGISTRO.html">REGISTRAR</a>
+    </div>
+    </nav>
+    
+        <div class="contenedor head">
+            <h1 class="titulo"><STRONG>SERVICIOS AMBIENTALES</STRONG></h1>
+            <p class="copy">Comprometidos con el cuidado del planeta</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestros servicios</h2>
+            <div class="contenedor-servicio">
+                <img src="img/Foto1.png" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">♣</span>MONITORIAS AMBIENTALES</h3>
+                        <p>Realizamos monitorias en las matrices de agua, aire, suelos e hidrobiológicos.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">♠</span>DISEÑO, MANTENIMIENTO Y OPERACIÓN DE PLANTAS DE TRATAMIENTO DE AGUA RESIDUAL</h3>
+                        <p>Somos expertos en purificación y potabilización de aguas residuales industriales y domésticas. Hacemos plantas de tratamiento con la mayor tecnología y dedicación.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">♦</span>MANTENIMIENTO DE TRAMPAS DE GRASAS Y RECOLECCIÓN DE RESIDUOS INDUSTRIALES</h3>
+                        <p>Recolectamos cualquier tipo de reisduos industriales (residuos peligrosos, residuos aprovechables, residuos especiales, entre otros), disponemos de la mejor forma sus residuos. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">SERVICIOS</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/foto2.png" class="img-galeria" alt="" width="800" >
+                    <img src="img/foto3.png" class="img-galeria" alt="" width="800" >
+                    <img src="img/foto4.png" class="img-galeria" alt="" width="800" >
+                    <img src="img/foto5.png" class="img-galeria" alt="" width="800" >
+                    <img src="img/foto6.png" class="img-galeria" alt="" width="800" >
+                    <img src="img/foto7.png" class="img-galeria" alt="" width="800" >
+                </div>
+                <form action="/HTML/slider.html">
+                    <input class="submit" type="submit" value="¡Conoce mas !.. " />
+                </form>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="img/foto8.png" alt="">
+                    <h3 class="n-expert">Diseños para PTAR</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/foto9.png" alt="">
+                    <h3 class="n-expert">Mediciones ambientales</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="img/foto10.png" alt="">
+                    <h3 class="n-expert">Ingenieria</h3>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">INGENIERIA AMBIENTAL</h2>
+                <p>TU MEJOR OPCIÓN</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="copyright">Copyright&copy; 2022 - Wilmar Rondón Avila - Todos los derechos reservados</div>
+    </footer>
+    <script src="/JS/INDEX_MENU.js"></script>
+</body>
+
+</html>
